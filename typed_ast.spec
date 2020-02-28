@@ -4,7 +4,7 @@
 #
 Name     : typed_ast
 Version  : 1.4.1
-Release  : 28
+Release  : 29
 URL      : https://files.pythonhosted.org/packages/18/09/b6a6b14bb8c5ec4a24fe0cf0160aa0b784fd55a6fd7f8da602197c5c461e/typed_ast-1.4.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/18/09/b6a6b14bb8c5ec4a24fe0cf0160aa0b784fd55a6fd7f8da602197c5c461e/typed_ast-1.4.1.tar.gz
 Summary  : a fork of Python 2 and 3 ast modules with type comment support
@@ -16,9 +16,12 @@ Requires: typed_ast-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 
 %description
-# Typed AST
-[![Build Status](https://travis-ci.org/python/typed_ast.svg?branch=master)](https://travis-ci.org/python/typed_ast)
-[![Chat at https://gitter.im/python/typed_ast](https://badges.gitter.im/python/typed_ast.svg)](https://gitter.im/python/typed_ast)
+`typed_ast` is a Python 3 package that provides a Python 2.7 and Python 3
+parser similar to the standard `ast` library.  Unlike `ast`, the parsers in
+`typed_ast` include PEP 484 type comments and are independent of the version of
+Python under which they are run.  The `typed_ast` parsers produce the standard
+Python AST (plus type comments), and are both fast and correct, as they are
+based on the CPython 2.7 and 3.6 parsers.
 
 %package license
 Summary: license components for the typed_ast package.
@@ -41,6 +44,7 @@ python components for the typed_ast package.
 Summary: python3 components for the typed_ast package.
 Group: Default
 Requires: python3-core
+Provides: pypi(typed-ast)
 
 %description python3
 python3 components for the typed_ast package.
@@ -55,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578948853
+export SOURCE_DATE_EPOCH=1582908130
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
