@@ -4,7 +4,7 @@
 #
 Name     : typed_ast
 Version  : 1.4.1
-Release  : 31
+Release  : 32
 URL      : https://files.pythonhosted.org/packages/18/09/b6a6b14bb8c5ec4a24fe0cf0160aa0b784fd55a6fd7f8da602197c5c461e/typed_ast-1.4.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/18/09/b6a6b14bb8c5ec4a24fe0cf0160aa0b784fd55a6fd7f8da602197c5c461e/typed_ast-1.4.1.tar.gz
 Summary  : a fork of Python 2 and 3 ast modules with type comment support
