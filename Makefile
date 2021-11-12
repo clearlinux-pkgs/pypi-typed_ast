@@ -1,5 +1,5 @@
 PKG_NAME := typed_ast
-URL = https://files.pythonhosted.org/packages/6e/08/c04a49ee26a94c1ec211e7b1e5f2971d692e04818ea67ef70f1e879cf525/typed_ast-1.4.3.tar.gz
+URL = https://files.pythonhosted.org/packages/41/f3/3762315a4cb5db2eb4b7d8d22042fda845591e3c966e084bb988d8d35be9/typed_ast-1.5.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
