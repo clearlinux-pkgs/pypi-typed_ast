@@ -4,7 +4,7 @@
 #
 Name     : typed_ast
 Version  : 1.5.1
-Release  : 49
+Release  : 50
 URL      : https://files.pythonhosted.org/packages/39/ea/548f05abe9604a08ae99c64bf75a4061a4eb9b0062162501bfb4fafdf68f/typed_ast-1.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/39/ea/548f05abe9604a08ae99c64bf75a4061a4eb9b0062162501bfb4fafdf68f/typed_ast-1.5.1.tar.gz
 Summary  : a fork of Python 2 and 3 ast modules with type comment support
@@ -56,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1638609526
+export SOURCE_DATE_EPOCH=1641422180
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
