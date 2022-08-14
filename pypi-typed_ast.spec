@@ -4,7 +4,7 @@
 #
 Name     : pypi-typed_ast
 Version  : 1.5.4
-Release  : 57
+Release  : 58
 URL      : https://files.pythonhosted.org/packages/07/d2/d55702e8deba2c80282fea0df53130790d8f398648be589750954c2dcce4/typed_ast-1.5.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/07/d2/d55702e8deba2c80282fea0df53130790d8f398648be589750954c2dcce4/typed_ast-1.5.4.tar.gz
 Summary  : a fork of Python 2 and 3 ast modules with type comment support
