@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-typed_ast
-Version  : 1.5.4
-Release  : 64
-URL      : https://files.pythonhosted.org/packages/07/d2/d55702e8deba2c80282fea0df53130790d8f398648be589750954c2dcce4/typed_ast-1.5.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/07/d2/d55702e8deba2c80282fea0df53130790d8f398648be589750954c2dcce4/typed_ast-1.5.4.tar.gz
+Version  : 1.5.5
+Release  : 65
+URL      : https://files.pythonhosted.org/packages/f9/7e/a424029f350aa8078b75fd0d360a787a273ca753a678d1104c5fa4f3072a/typed_ast-1.5.5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/f9/7e/a424029f350aa8078b75fd0d360a787a273ca753a678d1104c5fa4f3072a/typed_ast-1.5.5.tar.gz
 Summary  : a fork of Python 2 and 3 ast modules with type comment support
 Group    : Development/Tools
 License  : Apache-2.0
@@ -20,9 +20,10 @@ BuildRequires : buildreq-distutils3
 %define debug_package %{nil}
 
 %description
-# Typed AST
-[![Build Status](https://travis-ci.org/python/typed_ast.svg?branch=master)](https://travis-ci.org/python/typed_ast)
-[![Chat at https://gitter.im/python/typed_ast](https://badges.gitter.im/python/typed_ast.svg)](https://gitter.im/python/typed_ast)
+# End of life
+This project is no longer maintained.
+Use the standard library `ast` module instead.
+See https://github.com/python/typed_ast/issues/179.
 
 %package license
 Summary: license components for the pypi-typed_ast package.
@@ -52,10 +53,10 @@ python3 components for the pypi-typed_ast package.
 
 
 %prep
-%setup -q -n typed_ast-1.5.4
-cd %{_builddir}/typed_ast-1.5.4
+%setup -q -n typed_ast-1.5.5
+cd %{_builddir}/typed_ast-1.5.5
 pushd ..
-cp -a typed_ast-1.5.4 buildavx2
+cp -a typed_ast-1.5.5 buildavx2
 popd
 
 %build
@@ -63,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685547759
+export SOURCE_DATE_EPOCH=1688573973
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
